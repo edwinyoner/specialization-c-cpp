@@ -11,7 +11,7 @@ Este repositorio documenta todo mi aprendizaje durante la **Especialización en 
 
 ## 🔖 **Contenido**
 ### **Bloque I: Fundamentos del Lenguaje y Sistemas Embebidos**
-0. **Clase 0:** Tópicos Previos
+0. **Clase 0:** Tópicos previos
 1. **Clase 1:** Introducción y fundamentos
 2. **Clase 2:** Tipos de datos
 3. **Clase 3:** Operadores

@@ -1,4 +1,4 @@
-# 🛠️ Clase 0: Tópicos Previos
+# 🛠️ Clase 0: Tópicos previos
 
 En esta clase introductoria, exploramos conceptos clave relacionados con **microcontroladores (MCU)** y **microprocesadores (MPU)**, además de los diferentes tipos de lenguajes utilizados en sistemas de hardware y software. Esta información establece una base sólida para comprender mejor los sistemas embebidos y de propósito general.
 
@@ -33,4 +33,3 @@ A continuación, se muestran las capturas utilizadas en la clase:
 - **📚 Especialización:** Lenguajes **C** y **C++**
 - **🏫 Centro de Especialización:**
     - **Nombre:** [UMAKER S.A.C.](https://umakergroup.com/)
-
