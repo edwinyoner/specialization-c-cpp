@@ -1,10 +1,11 @@
 /**
+ * @author Edwin Yoner
+ * @Date 26/10/2024
+ *
  * programa_01_hola_mundo.cpp
  *
  * Este programa es un ejemplo básico que imprime un mensaje de saludo en la consola.
  *
- * @author Edwin Yoner
- * @Date 26/10/2024
  */
 
 #include <iostream> // Biblioteca estándar para entrada y salida

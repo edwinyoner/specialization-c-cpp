@@ -1,10 +1,11 @@
 /**
+ * @author Edwin Yoner
+ * @Date 26/10/2024
+ *
  * programa_01_hola_mundo.c
  *
  * Este programa es un ejemplo básico que imprime un mensaje de saludo en la consola.
  *
- * @author Edwin Yoner
- * @Date 26/10/2024
  */
 
 #include <stdio.h> // Biblioteca estándar para entrada y salida

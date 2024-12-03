@@ -1,11 +1,12 @@
 /**
+ * @author Edwin Yoner
+ * @date 26/10/2024
+ *
  * programa_02_tipos_de_datos.c
  *
  * Este programa muestra el uso de los principales tipos de datos en C,
  * e imprime sus tamaños utilizando sizeof.
  *
- * @author Edwin Yoner
- * @date 26/10/2024
  */
 
 #include <stdio.h> // Biblioteca estándar para entrada y salida
