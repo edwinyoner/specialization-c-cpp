@@ -2,7 +2,7 @@
  * @author Edwin Yoner
  * @date 26/10/2024
  *
- * programa_02_tipos_de_datos.c
+ * programa_02.c
  *
  * Este programa muestra el uso de los principales tipos de datos en C,
  * e imprime sus tamaños utilizando sizeof.

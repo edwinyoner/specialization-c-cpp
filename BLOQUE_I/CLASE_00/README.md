@@ -29,7 +29,4 @@ A continuación, se muestran las capturas utilizadas en la clase:
 ## 👨‍💻 Sobre el Autor
 - **👤 Nombre:** Edwin Yoner
 - **📧 Contacto:** [✉️ edwinyoner@gmail.com](mailto:edwinyoner@gmail.com)
-- **🔗 LinkedIn:** [🌐 linkedin.com/in/edwinyoner](https://www.linkedin.com/in/edwinyoner)  
-- **📚 Especialización:** Lenguajes **C** y **C++**
-- **🏫 Centro de Especialización:**
-    - **Nombre:** [UMAKER S.A.C.](https://umakergroup.com/)
+- **🔗 LinkedIn:** [🌐 linkedin.com/in/edwinyoner](https://www.linkedin.com/in/edwinyoner)

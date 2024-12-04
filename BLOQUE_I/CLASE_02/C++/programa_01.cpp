@@ -2,13 +2,13 @@
  * @author Edwin Yoner
  * @Date 26/10/2024
  *
- * programa_01_hola_mundo.c
+ * programa_01.cpp
  *
  * Este programa es un ejemplo básico que imprime un mensaje de saludo en la consola.
  *
  */
 
-#include <stdio.h> // Biblioteca estándar para entrada y salida
+#include <iostream> // Biblioteca estándar para entrada y salida
 
 /**
  * Función principal que se ejecuta al iniciar el programa.
@@ -17,6 +17,6 @@
  */
 int main() {
   // Imprimir mensaje de saludo en la consola
-  printf("Hola, mundo\n");
+  std::cout << "Hola, mundo" << std::endl;
   return 0; // Indica que el programa terminó correctamente
 }

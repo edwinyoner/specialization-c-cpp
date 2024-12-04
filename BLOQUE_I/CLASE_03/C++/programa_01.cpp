@@ -2,7 +2,7 @@
  * @author Edwin Yoner
  * @date 29/10/2024
  *
- * programa_01_operadores.cpp
+ * programa_01.cpp
  *
  * Este programa muestra el uso de los principales operadores
  * en el lenguaje C++, incluyendo aritméticos, incremento/decremento,

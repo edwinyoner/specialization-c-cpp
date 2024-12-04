@@ -1,4 +1,4 @@
-# 🛠️ Clase 1: Introducción y fundamentos
+# 🛠️ Clase 1: Implementación
 
 En esta clase, exploramos dos áreas fundamentales de la programación: **estructuras de datos** y el **toolchain de desarrollo** (GCC). Aprendemos los conceptos básicos de cómo la memoria se organiza en **stack** y **heap**, y cómo las herramientas de desarrollo se combinan para convertir el código fuente en ejecutables.
 
@@ -65,6 +65,3 @@ A continuación, se muestran las capturas utilizadas en la clase:
 - **👤 Nombre:** Edwin Yoner
 - **📧 Contacto:** [✉️ edwinyoner@gmail.com](mailto:edwinyoner@gmail.com)
 - **🔗 LinkedIn:** [🌐 linkedin.com/in/edwinyoner](https://www.linkedin.com/in/edwinyoner)
-- **📚 Especialización:** Lenguajes **C** y **C++**
-- **🏫 Centro de Especialización:**
-    - **Nombre:** [UMAKER S.A.C.](https://umakergroup.com/)

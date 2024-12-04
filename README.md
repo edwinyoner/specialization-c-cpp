@@ -12,30 +12,30 @@ Este repositorio documenta todo mi aprendizaje durante la **Especialización en 
 ## 🔖 **Contenido**
 ### **Bloque I: Fundamentos del Lenguaje y Sistemas Embebidos**
 0. **Clase 0:** Tópicos previos
-1. **Clase 1:** Introducción y fundamentos
+1. **Clase 1:** Implementación
 2. **Clase 2:** Tipos de datos
 3. **Clase 3:** Operadores
-4. **Clase 4:** Sentencias condicionales
-5. **Clase 5:** Punteros
-6. **Clase 6:** Bucles
-7. **Clase 7:** Funciones básicas
-8. **Clase 8:** Funciones avanzadas
+4. **Clase 4:** Sentencias I
+5. **Clase 5:** Punteros I
+6. **Clase 6:** Sentencias II
+7. **Clase 7:** Funciones I
+8. **Clase 8:** Funciones II
 9. **Clase 9:** Arrays
 10. **Clase 10:** Estructuras
-11. **Clase 11:** Integración de punteros, funciones y estructuras
+11. **Clase 11:** Master Class - Integración: punteros, funciones, arrays, estructuras
 12. **Clase 12:** Memoria dinámica
-13. **Clase 13:** Microcontroladores I
-14. **Clase 14:** Microcontroladores II
+13. **Clase 13:** Master Class - Microcontroladores I
+14. **Clase 14:** Master Class - Microcontroladores II
 15. **Clase 15:** Cadenas
-16. **Clase 16:** Archivos
 
 ### **Bloque II: Estructuras de Datos Avanzadas**
+16. **Clase 16:** Archivos
 17. **Clase 17:** Listas enlazadas
 18. **Clase 18:** Pilas y colas
 19. **Clase 19:** Árboles
 
 ### **Bloque III: Programación Orientada a Objetos y Qt**
-20. **Clase 20:** Introducción a POO
+20. **Clase 20:** POO I
 21. **Clase 21:** POO II y Qt I
 22. **Clase 22:** POO III y Qt II
 23. **Clase 23:** POO IV

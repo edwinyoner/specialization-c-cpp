@@ -92,12 +92,7 @@ A continuación, se muestra la captura utilizada en la clase:
 
 ![Operadores](images/1.png)
 
----
-
 ## 👨‍💻 Sobre el Autor
 - **👤 Nombre:** Edwin Yoner
 - **📧 Contacto:** [✉️ edwinyoner@gmail.com](mailto:edwinyoner@gmail.com)
 - **🔗 LinkedIn:** [🌐 linkedin.com/in/edwinyoner](https://www.linkedin.com/in/edwinyoner)
-- **📚 Especialización:** Operadores y Control de Flujo en **C/C++**
-- **🏫 Centro de Especialización:**
-    - **Nombre:** [UMAKER S.A.C.](https://umakergroup.com/)

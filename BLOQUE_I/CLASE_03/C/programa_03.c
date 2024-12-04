@@ -2,7 +2,7 @@
 * @author Edwin Yoner
  * @date 29/10/2024
  *
- * programa_03_ejercicio_02.c
+ * programa_03.c
  *
  * Este programa calcula el promedio de dos notas de un alumno,
  * solicitando al usuario que ingrese ambas notas a través de la consola.
