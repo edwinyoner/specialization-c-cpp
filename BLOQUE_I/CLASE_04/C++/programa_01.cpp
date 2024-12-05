@@ -23,11 +23,17 @@ int main() {
 
     // Ejemplo de if
     std::cout << "### Ejemplo de if ###" << std::endl;
-    std::cout << "Ingresa un número para verificar si es positivo: ";
+    std::cout << "Ingresa un número para verificar si es positivo, negativo o cero: ";
     std::cin >> numero;
 
     if (numero > 0) {
         std::cout << "El número " << numero << " es positivo." << std::endl << std::endl;
+    }
+    if (numero < 0) {
+        std::cout << "El número " << numero << " es negativo." << std::endl << std::endl;
+    }
+    if (numero == 0) {
+        std::cout << "El número " << numero << " es neutro." << std::endl << std::endl;
     }
 
     // Ejemplo de if-else

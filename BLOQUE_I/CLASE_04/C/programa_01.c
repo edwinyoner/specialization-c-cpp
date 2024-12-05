@@ -22,11 +22,17 @@ int main() {
 
     // Ejemplo de if
     printf("### Ejemplo de if ###\n");
-    printf("Ingresa un número para verificar si es positivo: ");
+    printf("Ingresa un número para verificar si es positivo, negativo o cero: ");
     scanf("%d", &numero);
 
     if (numero > 0) {
         printf("El número %d es positivo.\n\n", numero);
+    }
+    if (numero < 0) {
+        printf("El número %d es negativo.\n\n", numero);
+    }
+    if (numero == 0) {
+        printf("El número %d es neutro.\n\n", numero);
     }
 
     // Ejemplo de if-else
