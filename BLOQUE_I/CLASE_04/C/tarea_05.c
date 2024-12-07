@@ -34,7 +34,7 @@ int main() {
     for (int i = 1; i <= numFila; i++) {
         // Imprimir espacios
         for (int j = 1; j <= numFila - i; j++) {
-            printf("--");
+            printf("  ");
         }
         // Imprimir asteriscos
         for (int k = 1; k <= i; k++) {
