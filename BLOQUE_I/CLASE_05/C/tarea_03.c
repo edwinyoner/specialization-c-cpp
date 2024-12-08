@@ -1,14 +1,18 @@
 /**
  * @author Edwin Yoner
- * @date 31/10/2024
+ * @date 05/11/2024
  *
  * tarea_03.c
  *
  * Este programa calcula el factorial de un número ingresado por el usuario.
- * Utiliza un bucle `for` para realizar el cálculo iterativo.
+ * Incluye una implementación iterativa y una recursiva para mayor versatilidad.
  */
 
 #include <stdio.h> // Biblioteca estándar para entrada y salida
+
+// Prototipos de funciones
+unsigned long long factorialIterativo(int numero);
+unsigned long long factorialRecursivo(int numero);
 
 /**
  * Función principal que se ejecuta al iniciar el programa.
@@ -16,26 +20,50 @@
  * @return Retorna 0 si la ejecución es exitosa.
  */
 int main() {
-    // Variables para el número y su factorial
-    int numero, factorial = 1;
+    int numero;
+    unsigned long long resultadoIterativo, resultadoRecursivo;
 
-    // Solicitar al usuario que ingrese un número entero no negativo
+    // Solicitar al usuario un número entero no negativo
     printf("Ingrese un número entero positivo: ");
-    scanf("%d", &numero);
-
-    // Validar que el número sea no negativo
-    if (numero < 0) {
-        printf("Error: No se puede calcular el factorial de un número negativo.\n");
+    if (scanf("%d", &numero) != 1 || numero < 0) {
+        printf("Error: Ingrese un número entero positivo válido.\n");
         return 1; // Salida temprana por error
     }
 
-    // Calcular el factorial
-    for (int i = 1; i <= numero; i++) {
-        factorial *= i;
-    }
+    // Calcular el factorial utilizando ambas técnicas
+    resultadoIterativo = factorialIterativo(numero);
+    resultadoRecursivo = factorialRecursivo(numero);
 
-    // Mostrar el resultado
-    printf("El factorial de %d es: %d\n", numero, factorial);
+    // Mostrar los resultados
+    printf("Factorial calculado iterativamente: %llu\n", resultadoIterativo);
+    printf("Factorial calculado recursivamente: %llu\n", resultadoRecursivo);
 
     return 0; // Indica que el programa terminó correctamente
+}
+
+/**
+ * Calcula el factorial de un número de manera iterativa.
+ *
+ * @param numero El número del cual se calculará el factorial.
+ * @return El factorial calculado.
+ */
+unsigned long long factorialIterativo(int numero) {
+    unsigned long long resultado = 1;
+    for (int i = 1; i <= numero; i++) {
+        resultado *= i;
+    }
+    return resultado;
+}
+
+/**
+ * Calcula el factorial de un número de manera recursiva.
+ *
+ * @param numero El número del cual se calculará el factorial.
+ * @return El factorial calculado.
+ */
+unsigned long long factorialRecursivo(int numero) {
+    if (numero == 0) {
+        return 1;
+    }
+    return (unsigned long long)numero * factorialRecursivo(numero - 1);
 }

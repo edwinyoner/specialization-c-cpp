@@ -1,14 +1,28 @@
 /**
  * @author Edwin Yoner
- * @date 31/10/2024
+ * @date 05/11/2024
  *
- * programa_04_bucles.cpp
+ * programa_cpp.cpp
  *
- * Este programa demuestra el uso de los bucles `while`, `do-while` y `for`
- * en el lenguaje C++, con ejemplos prácticos.
+ * Este programa demuestra el uso de funciones en el lenguaje C++.
+ * Incluye sobrecarga de funciones para realizar operaciones con enteros
+ * y flotantes, además de un menú interactivo.
  */
 
 #include <iostream> // Biblioteca estándar para entrada y salida
+using namespace std;
+
+// Sobrecarga de funciones para suma
+int sumar(int a, int b);
+float sumar(float a, float b);
+
+// Sobrecarga de funciones para resta
+int restar(int a, int b);
+float restar(float a, float b);
+
+// Función para imprimir el resultado
+template <typename T>
+void imprimirResultado(const string& operacion, T resultado);
 
 /**
  * Función principal que se ejecuta al iniciar el programa.
@@ -16,35 +30,77 @@
  * @return Retorna 0 si la ejecución es exitosa.
  */
 int main() {
-    // Variables de ejemplo
-    int i = 1, n;
-
-    // Ejemplo de while
-    std::cout << "### Ejemplo de while ###\n";
-    std::cout << "Imprimiendo números del 1 al 5 usando while:\n";
-    while (i <= 5) {
-        std::cout << i << " ";
-        i++;
-    }
-    std::cout << "\n\n";
-
-    // Ejemplo de do-while
-    std::cout << "### Ejemplo de do-while ###\n";
-    std::cout << "Ingresa un número positivo (o ingresa un negativo para salir): ";
+    int opcion;
     do {
-        std::cin >> n;
-        if (n >= 0) {
-            std::cout << "Ingresaste: " << n << "\n";
+        cout << "\n### Menú de Opciones ###" << endl;
+        cout << "1. Sumar dos números enteros" << endl;
+        cout << "2. Restar dos números enteros" << endl;
+        cout << "3. Sumar dos números flotantes" << endl;
+        cout << "4. Restar dos números flotantes" << endl;
+        cout << "0. Salir" << endl;
+        cout << "Selecciona una opción: ";
+        cin >> opcion;
+
+        if (opcion == 0) {
+            cout << "Saliendo del programa..." << endl;
+            break;
         }
-    } while (n >= 0);
-    std::cout << "Número negativo detectado. Saliendo del bucle.\n\n";
 
-    // Ejemplo de for
-    std::cout << "### Ejemplo de for ###\n";
-    std::cout << "Imprimiendo tabla del 5 usando for:\n";
-    for (i = 1; i <= 10; i++) {
-        std::cout << "5 x " << i << " = " << 5 * i << "\n";
-    }
+        if (opcion == 1 || opcion == 2) {
+            int num1, num2, resultado;
+            cout << "Ingresa el primer número entero: ";
+            cin >> num1;
+            cout << "Ingresa el segundo número entero: ";
+            cin >> num2;
 
-    return 0; // Indica que el programa terminó correctamente
+            if (opcion == 1) {
+                resultado = sumar(num1, num2);
+                imprimirResultado("Suma", resultado);
+            } else {
+                resultado = restar(num1, num2);
+                imprimirResultado("Resta", resultado);
+            }
+        } else if (opcion == 3 || opcion == 4) {
+            float num1, num2, resultado;
+            cout << "Ingresa el primer número flotante: ";
+            cin >> num1;
+            cout << "Ingresa el segundo número flotante: ";
+            cin >> num2;
+
+            if (opcion == 3) {
+                resultado = sumar(num1, num2);
+                imprimirResultado("Suma", resultado);
+            } else {
+                resultado = restar(num1, num2);
+                imprimirResultado("Resta", resultado);
+            }
+        } else {
+            cout << "Opción no válida." << endl;
+        }
+    } while (opcion != 0);
+
+    return 0;
+}
+
+// Implementación de funciones con sobrecarga
+int sumar(int a, int b) {
+    return a + b;
+}
+
+float sumar(float a, float b) {
+    return a + b;
+}
+
+int restar(int a, int b) {
+    return a - b;
+}
+
+float restar(float a, float b) {
+    return a - b;
+}
+
+// Función plantilla para imprimir el resultado
+template <typename T>
+void imprimirResultado(const string& operacion, T resultado) {
+    cout << "Resultado de la " << operacion << ": " << resultado << endl;
 }

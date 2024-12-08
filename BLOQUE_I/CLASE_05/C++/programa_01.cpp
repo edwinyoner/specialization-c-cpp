@@ -1,16 +1,22 @@
 /**
  * @author Edwin Yoner
- * @date 31/10/2024
+ * @date 05/11/2024
  *
  * programa_01.cpp
  *
- * Este programa demuestra el uso de las sentencias condicionales
- * en el lenguaje C++, incluyendo `if`, `if-else` y `switch`, con
- * ejemplos prácticos y múltiples casos.
+ * Este programa demuestra el uso de funciones en el lenguaje C++.
+ * Incluye ejemplos de funciones con retorno, sin retorno, y el
+ * paso de parámetros por valor.
  */
 
 #include <iostream> // Biblioteca estándar para entrada y salida
-#include <iomanip>  // Biblioteca para formatear salidas
+using namespace std;
+
+// Prototipos de funciones
+int sumar(int a, int b);
+int restar(int a, int b);
+void imprimirResultado(int resultado);
+void mostrarMenu();
 
 /**
  * Función principal que se ejecuta al iniciar el programa.
@@ -18,92 +24,78 @@
  * @return Retorna 0 si la ejecución es exitosa.
  */
 int main() {
-    // Variables para los ejemplos
-    int numero, opcion;
+    int opcion, num1, num2, resultado;
 
-    // Ejemplo de if
-    std::cout << "### Ejemplo de if ###" << std::endl;
-    std::cout << "Ingresa un número para verificar si es positivo, negativo o cero: ";
-    std::cin >> numero;
+    do {
+        mostrarMenu();
+        cout << "Selecciona una opción (0 para salir): ";
+        cin >> opcion;
 
-    if (numero > 0) {
-        std::cout << "El número " << numero << " es positivo." << std::endl << std::endl;
-    }
-    if (numero < 0) {
-        std::cout << "El número " << numero << " es negativo." << std::endl << std::endl;
-    }
-    if (numero == 0) {
-        std::cout << "El número " << numero << " es neutro." << std::endl << std::endl;
-    }
-
-    // Ejemplo de if-else
-    std::cout << "### Ejemplo de if-else ###" << std::endl;
-    std::cout << "Ingresa otro número para verificar si es par o impar: ";
-    std::cin >> numero;
-
-    if (numero % 2 == 0) {
-        std::cout << "El número " << numero << " es par." << std::endl << std::endl;
-    } else {
-        std::cout << "El número " << numero << " es impar." << std::endl << std::endl;
-    }
-
-    // Ejemplo de switch
-    std::cout << "### Ejemplo de switch ###" << std::endl;
-    std::cout << "Selecciona una opción (1: Suma, 2: Resta, 3: Multiplicación, 4: División): ";
-    std::cin >> opcion;
-
-    int a = 10, b = 5; // Variables de ejemplo para las operaciones
-    switch (opcion) {
-        case 1:
-            std::cout << "Opción seleccionada: Suma" << std::endl;
-            std::cout << "Resultado: " << a << " + " << b << " = " << a + b << std::endl << std::endl;
+        if (opcion == 0) {
+            cout << "Saliendo del programa..." << endl;
             break;
-        case 2:
-            std::cout << "Opción seleccionada: Resta" << std::endl;
-            std::cout << "Resultado: " << a << " - " << b << " = " << a - b << std::endl << std::endl;
-            break;
-        case 3:
-            std::cout << "Opción seleccionada: Multiplicación" << std::endl;
-            std::cout << "Resultado: " << a << " * " << b << " = " << a * b << std::endl << std::endl;
-            break;
-        case 4:
-            if (b != 0) { // Verificar que no haya división por cero
-                std::cout << "Opción seleccionada: División" << std::endl;
-                std::cout << std::fixed << std::setprecision(2);
-                std::cout << "Resultado: " << a << " / " << b << " = " << static_cast<float>(a) / b << std::endl << std::endl;
-            } else {
-                std::cout << "Error: División por cero no permitida." << std::endl << std::endl;
-            }
-            break;
-        default:
-            std::cout << "Opción no válida. Por favor, selecciona entre 1, 2, 3 o 4." << std::endl << std::endl;
-            break;
-    }
+        }
 
-    // Combinación de if y switch
-    std::cout << "### Combinación de if y switch ###" << std::endl;
-    std::cout << "Ingresa tu edad para determinar tu rango de edad: ";
-    std::cin >> numero;
+        cout << "Ingresa el primer número: ";
+        cin >> num1;
+        cout << "Ingresa el segundo número: ";
+        cin >> num2;
 
-    if (numero < 0) {
-        std::cout << "Edad no válida." << std::endl;
-    } else if (numero < 18) {
-        std::cout << "Eres menor de edad." << std::endl;
-    } else {
-        std::cout << "Eres mayor de edad." << std::endl;
-
-        switch (numero) {
-            case 18:
-                std::cout << "¡Felicidades! Alcanzaste la mayoría de edad." << std::endl;
+        switch (opcion) {
+            case 1:
+                resultado = sumar(num1, num2);
+                imprimirResultado(resultado);
                 break;
-            case 21:
-                std::cout << "¡Tienes 21 años, una edad especial en muchos países!" << std::endl;
+            case 2:
+                resultado = restar(num1, num2);
+                imprimirResultado(resultado);
                 break;
             default:
-                std::cout << "Disfruta de tu edad: " << numero << " años." << std::endl;
+                cout << "Opción no válida. Por favor, selecciona 1 o 2." << endl;
                 break;
         }
-    }
+    } while (opcion != 0);
 
     return 0; // Indica que el programa terminó correctamente
+}
+
+/**
+ * Función que realiza la suma de dos números enteros.
+ *
+ * @param a Primer número.
+ * @param b Segundo número.
+ * @return La suma de los dos números.
+ */
+int sumar(int a, int b) {
+    return a + b;
+}
+
+/**
+ * Función que realiza la resta de dos números enteros.
+ *
+ * @param a Primer número.
+ * @param b Segundo número.
+ * @return La resta de los dos números.
+ */
+int restar(int a, int b) {
+    return a - b;
+}
+
+/**
+ * Función que imprime el resultado de una operación.
+ *
+ * @param resultado Resultado de una operación matemática.
+ */
+void imprimirResultado(int resultado) {
+    cout << "El resultado es: " << resultado << endl << endl;
+}
+
+/**
+ * Función que muestra el menú de opciones al usuario.
+ */
+void mostrarMenu() {
+    cout << "\n### Menú de Opciones ###" << endl;
+    cout << "1. Sumar dos números" << endl;
+    cout << "2. Restar dos números" << endl;
+    cout << "0. Salir" << endl;
 }
