@@ -1,5 +1,5 @@
 /**
-* @author Edwin Yoner
+ * @author Edwin Yoner
  * @date 12/11/2024
  *
  * programa_02.c
