@@ -68,7 +68,7 @@ int main() {
 
 ---
 
-## 🗞️ Capturas de Pantalla
+## 🖼️ Capturas de Pantalla
 A continuación, se muestran las capturas utilizadas en esta clase:
 
 1️⃣ **Representación Gráfica de Arrays**

@@ -13,10 +13,10 @@
 using namespace std;
 
 // Prototipos de funciones
-void definirPunteroCpp();
-void declararInicializarPunteroCpp();
-void asignarConPunteroCpp();
-void punteroAPunteroCpp();
+void definirPuntero();
+void declararInicializarPuntero();
+void asignarConPuntero();
+void punteroAPuntero();
 
 /**
  * Función principal que ejecuta los ejemplos.
@@ -26,10 +26,10 @@ void punteroAPunteroCpp();
 int main() {
     cout << "### Operaciones con Punteros en C++ ###" << endl;
 
-    definirPunteroCpp();
-    declararInicializarPunteroCpp();
-    asignarConPunteroCpp();
-    punteroAPunteroCpp();
+    definirPuntero();
+    declararInicializarPuntero();
+    asignarConPuntero();
+    punteroAPuntero();
 
     return 0; // Indica que el programa terminó correctamente
 }
@@ -38,7 +38,7 @@ int main() {
  * Ejemplo 1: Definición básica de punteros.
  * Un puntero es una variable que puede almacenar la dirección de memoria de otra variable.
  */
-void definirPunteroCpp() {
+void definirPuntero() {
     int *puntero; // Definición de un puntero a un entero
     char *punteroChar; // Definición de un puntero a un carácter
     double *punteroDouble; // Definición de un puntero a un doble
@@ -51,7 +51,7 @@ void definirPunteroCpp() {
  * Ejemplo 2: Declaración e inicialización de punteros.
  * Se declara un puntero y se le asigna la dirección de una variable existente.
  */
-void declararInicializarPunteroCpp() {
+void declararInicializarPuntero() {
     int numero = 42; // Variable normal
     int *puntero = &numero; // Declaración e inicialización del puntero
 
@@ -65,7 +65,7 @@ void declararInicializarPunteroCpp() {
  * Ejemplo 3: Uso de punteros para asignar valores.
  * Los punteros permiten modificar el valor de una variable apuntada.
  */
-void asignarConPunteroCpp() {
+void asignarConPuntero() {
     int numero = 42; // Variable normal
     int *puntero = &numero; // Declaración e inicialización del puntero
 
@@ -79,7 +79,7 @@ void asignarConPunteroCpp() {
  * Ejemplo 4: Punteros a punteros.
  * Un puntero puede apuntar a otro puntero.
  */
-void punteroAPunteroCpp() {
+void punteroAPuntero() {
     int numero = 42;
     int *puntero = &numero;
     int **doblePuntero = &puntero;
