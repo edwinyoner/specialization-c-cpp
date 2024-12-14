@@ -1,4 +1,4 @@
-# 🛠️ Clase 2: Tipos de datos
+# 💻 Clase 2: Tipos de datos
 
 En esta clase, profundizamos en los **tipos de datos básicos** disponibles en **C y C++**, comparando sus diferencias, tamaños, rangos y ejemplos de uso. Comprender los tipos de datos es fundamental para gestionar correctamente la memoria y las operaciones en nuestros programas.
 

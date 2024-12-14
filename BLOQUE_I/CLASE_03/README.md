@@ -1,4 +1,4 @@
-# 🛠️ Clase 3: Operadores
+# 💻 Clase 3: Operadores
 
 En esta clase, exploramos los **operadores básicos** disponibles en **C y C++**, que son fundamentales para realizar cálculos, comparaciones y tomar decisiones en nuestros programas.
 

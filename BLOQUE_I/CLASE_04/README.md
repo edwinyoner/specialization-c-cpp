@@ -1,4 +1,4 @@
-# 🔄 Clase 4: Sentencias I
+# 💻 Clase 4: Sentencias I
 
 En esta clase, exploramos las **sentencias condicionales** y **bucles** en **C y C++**, herramientas clave para controlar el flujo de un programa según condiciones y repeticiones. Además, analizamos el uso de `switch` para manejar múltiples condiciones.
 

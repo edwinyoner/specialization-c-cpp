@@ -1,4 +1,4 @@
-# 🔢 Clase 5: Funciones
+# 💻 Clase 5: Funciones I
 
 En esta clase, exploramos los fundamentos de **funciones**, la **sobrecarga de funciones**, el uso de **parámetros por defecto** y el concepto de **procedimientos** en **C y C++**. Estos elementos son esenciales para estructurar y modularizar programas.
 
@@ -84,4 +84,4 @@ A continuación, las capturas utilizadas en esta clase:
 
 - **👤 Nombre:** Edwin Yoner
 - **📧 Contacto:** [✉️ edwinyoner@gmail.com](mailto:edwinyoner@gmail.com)
-- **🔗 LinkedIn:** [🌐 linkedin.com/in/edwinyoner](https://www.linkedin.com/in/edwinyoner)  
+- **🔗 LinkedIn:** [🌐 linkedin.com/in/edwinyoner](https://www.linkedin.com/in/edwinyoner)

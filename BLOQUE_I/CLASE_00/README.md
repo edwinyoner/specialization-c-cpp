@@ -1,4 +1,4 @@
-# 🛠️ Clase 0: Tópicos previos
+# 💻 Clase 0: Tópicos previos
 
 En esta clase introductoria, exploramos conceptos clave relacionados con **microcontroladores (MCU)** y **microprocesadores (MPU)**, además de los diferentes tipos de lenguajes utilizados en sistemas de hardware y software. Esta información establece una base sólida para comprender mejor los sistemas embebidos y de propósito general.
 

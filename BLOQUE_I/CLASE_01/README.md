@@ -1,4 +1,4 @@
-# 🛠️ Clase 1: Implementación
+# 💻 Clase 1: Implementación
 
 En esta clase, exploramos dos áreas fundamentales de la programación: **estructuras de datos** y el **toolchain de desarrollo** (GCC). Aprendemos los conceptos básicos de cómo la memoria se organiza en **stack** y **heap**, y cómo las herramientas de desarrollo se combinan para convertir el código fuente en ejecutables.
 
