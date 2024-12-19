@@ -18,6 +18,8 @@ typedef struct {
     float precio;
 } Vehiculo;
 
+//typedef struct Vehiculo Vehiculo; //typdef tipoA tipoB
+
 // Prototipos de funciones
 void mostrarVehiculo(const Vehiculo* vehiculo);
 Vehiculo* crearVehiculo(char modelo[], int anio, float precio);
