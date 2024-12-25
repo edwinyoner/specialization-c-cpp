@@ -1,6 +1,6 @@
-# 💻 Clase 11: Predirectivas del Preprocesador
+# 💻 Clase 11: Directivas del Preprocesador
 
-En esta clase, exploramos las **predirectivas del preprocesador** en **C** y **C++**, herramientas fundamentales que permiten realizar operaciones previas a la compilación del código fuente.
+En esta clase, exploramos las **directivas del preprocesador** en **C** y **C++**, herramientas fundamentales que permiten realizar operaciones previas a la compilación del código fuente.
 
 ---
 
@@ -15,7 +15,7 @@ El **preprocesador** es una etapa previa a la compilación que realiza transform
 #define PI 3.14159
 ```
 
-En **C++**, las predirectivas funcionan de manera similar, pero suelen usarse junto con características específicas del lenguaje, como clases o templates:
+En **C++**, las directivas funcionan de manera similar, pero suelen usarse junto con características específicas del lenguaje, como clases o templates:
 ```cpp
 #include <iostream>
 #define MAX 100
@@ -23,8 +23,8 @@ En **C++**, las predirectivas funcionan de manera similar, pero suelen usarse ju
 
 ---
 
-### **2️⃣ Principales Predirectivas del Preprocesador**
-A continuación, se describen las principales predirectivas utilizadas en C y C++:
+### **2️⃣ Principales Directivas del Preprocesador**
+A continuación, se describen las principales directivas utilizadas en C y C++:
 
 | Predirectiva      | Descripción                                                        | Ejemplo                           |
 |-------------------|--------------------------------------------------------------------|-----------------------------------|
@@ -38,7 +38,7 @@ A continuación, se describen las principales predirectivas utilizadas en C y C+
 ---
 
 ### **3️⃣ Ejemplo Completo**
-A continuación, se muestra un ejemplo completo que utiliza varias predirectivas en **C**:
+A continuación, se muestra un ejemplo completo que utiliza varias directivas en **C**:
 
 ```c
 #include <stdio.h>
