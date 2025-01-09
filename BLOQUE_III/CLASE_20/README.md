@@ -140,6 +140,9 @@ int main() {
 1️⃣ **Diagrama de Clase y Objeto**
 ![POO - Diagrama de Clase y Objeto](images/1.png)
 
+2️⃣ **Diagrama de Polimorfismo**
+![POO - Diagrama de Polimorfismo](images/2.png)
+
 ---
 
 ## 👨‍💻 Sobre el Autor

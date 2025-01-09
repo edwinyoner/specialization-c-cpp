@@ -1,0 +1,67 @@
+#include "widget.h"
+
+Widget::Widget(QWidget *parent)
+    : QWidget(parent), file("C:/Users/Uusario/Documents/QT_PROYECTOS/archivos/datos.txt")
+{
+    this->resize(600,300);
+    label = new QLabel("PROYECTO",this);
+    label->setGeometry(220,10,300,50);
+    label->setStyleSheet("font-size:24px;"
+                         "color :#2e25d1; "
+                         "font-weight:bold");
+    //Crear Temporizador
+    timer = new QTimer(this);
+    connect(timer,&QTimer::timeout,this,&Widget::updateTable);
+    timer->start(1000);
+    //Crear QLineEdit(caja de texto)
+    lineEdit = new QLineEdit(this);
+    lineEdit->setGeometry(100,60,150,30);
+    //Creamos boton
+    boton = new QPushButton("Escribir",this);
+    boton->setGeometry(400,60,150,30);
+    connect(boton,&QPushButton::clicked,this,&Widget::escribirArchivo);
+    //Crear tabla
+    table = new QTableWidget(this);
+    table->setGeometry(100,120,400,80);
+    table->setColumnCount(2);
+    table->setHorizontalHeaderLabels({"Fecha","Valor"});
+    if (!file.open(QIODevice::Append| QIODevice::Text)){
+        qWarning("No se pudo abrir el archivo para escritura");
+    }
+}
+
+Widget::~Widget() {
+    file.close();
+}
+void Widget::updateTable(){
+
+    QFile readFile("C:/Users/Uusario/Documents/QT_PROYECTOS/archivos/datos.txt");
+    if (readFile.open(QIODevice::ReadOnly| QIODevice::Text)){
+        QTextStream in(&readFile);
+        QString ultimaFila;
+        //Saltar al final
+        readFile.seek(readFile.size()-25); //mover el puntero 25 bytes antes del final del archivo
+        while(!in.atEnd()){
+            ultimaFila = in.readLine();
+            qDebug()<<ultimaFila;
+        }
+        QStringList values = ultimaFila.split(" - ");
+        if(values.size()>=2){
+            table->setRowCount(1);
+            table->setItem(0,0,new QTableWidgetItem(values[0]));
+            table->setItem(0,1,new QTableWidgetItem(values[1]));
+        }
+        readFile.close();
+
+    }
+
+}
+void Widget::escribirArchivo(){
+    if(file.isOpen()){
+        QTextStream out(&file);
+        //out<<"2\n";
+        QString currentTime = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm::ss");
+        out<<currentTime<<" - "<<lineEdit->text()<<"\n";
+        lineEdit->clear();
+    }
+}
