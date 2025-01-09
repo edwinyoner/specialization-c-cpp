@@ -113,10 +113,10 @@ void loop() {
 ## 🖼️ Capturas de Pantalla
 
 1️⃣ **Control de LED en Arduino**
-![LED Control](images/led.png)
+![LED Control](images/1.png)
 
 2️⃣ **Pantalla LCD I2C mostrando texto dinámico**
-![LCD Control](images/lcd.png)
+![LCD Control](images/2.png)
 
 ---
 

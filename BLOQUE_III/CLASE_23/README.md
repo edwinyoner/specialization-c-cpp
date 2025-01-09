@@ -119,11 +119,11 @@ La resistencia se coloca en serie con el LED para limitar la corriente.
 
 1️⃣ **Control de LED:**
 
-![Control de LED](images/led_control.png)
+![Control de LED](images/1.png)
 
 2️⃣ **Pantalla LCD I2C:**
 
-![Pantalla LCD I2C](images/lcd_display.png)
+![Pantalla LCD I2C](images/2.png)
 
 ---
 
