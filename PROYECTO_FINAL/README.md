@@ -26,6 +26,8 @@ La interfaz gráfica de la calculadora cuenta con los siguientes elementos:
 4. **Botones (`QPushButton`):** Botones para sumar, restar, multiplicar y dividir.
 5. **Etiqueta y campo de resultado:** Muestra el resultado de la operación.
 
+![Proyecto Final Calculadora](images/PROYECTO_FINAL.png)
+
 ---
 
 ### **3️⃣ Código del Proyecto**
@@ -204,19 +206,14 @@ void Widget::dividir() {
 
 ---
 
-### **5️⃣ Captura de Pantalla**
-![Proyecto Final Calculadora](images/PROYECTO_FINAL.png)
-
----
-
-### **6️⃣ Requisitos**
+### **5️⃣ Requisitos**
 
 - **Framework Qt**.
 - **Qt Creator**.
 
 ---
 
-### **7️⃣ Pasos para Ejecutar el Proyecto**
+### **6️⃣ Pasos para Ejecutar el Proyecto**
 
 1. Abre el proyecto en **Qt Creator** o tu entorno preferido.
 2. Compila el proyecto.
